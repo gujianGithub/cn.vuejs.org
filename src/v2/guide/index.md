@@ -320,7 +320,7 @@ Vue.component('todo-item', {
     <todo-item
       v-for="item in groceryList"
       v-bind:todo="item"
-      v-bind:key="item.id">
+      v-bind:key="item.id">  //“key”是一个保留属性，不能用作组件支持(应把key替换成另一个属性)。
     </todo-item>
   </ol>
 </div>
